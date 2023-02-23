@@ -1,0 +1,9 @@
+{
+	"name": "vacation-planning",
+	"scripts": {
+		"test": "jest",
+		"test:watch": "jest --watch",
+		"test:solutions": "cross-env TEST_SOLUTIONS=1 jest",
+		"tsc": "tsc"
+	}
+}
