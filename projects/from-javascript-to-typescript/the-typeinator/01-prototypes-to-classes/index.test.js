@@ -2,11 +2,6 @@ const { Robot, Humanoid } = process.env.TEST_SOLUTIONS
   ? require('./solution')
   : require('./index')
 
-const mf = jest.fn(() => {
-  return 'hello'
-})
-console.log(mf.getMockName())
-
 const log = (console.log = jest.fn())
 
 beforeEach(() => {
