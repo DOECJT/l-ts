@@ -42,7 +42,7 @@ class Humanoid extends Robot {
   }
 
   announce() {
-    Robot.prototype.announce.apply(this)
+    super.announce()
     console.log(` > ${this.catchphrase} <`)
   }
 }
