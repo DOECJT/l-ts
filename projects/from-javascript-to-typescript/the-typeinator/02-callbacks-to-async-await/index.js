@@ -8,12 +8,6 @@ async function checkEmotion(knownEmotions, emotion) {
   return knownEmotions.has(emotion)
 }
 
-async function test() {
-  const has = await checkEmotion(new Set([1]), 1)
-  console.log(`has: ${has}`)
-}
-test()
-
 async function speak(knownEmotions, newEmotion, phrase) {
   if (!await checkEmotion(knownEmotions, newEmotion))
     throw new Error(`Does not compute. I do not understand ${newEmotion}.`)
@@ -21,5 +15,7 @@ async function speak(knownEmotions, newEmotion, phrase) {
   return `"${phrase}" (${newEmotion})`
 }
 
-module.exports.checkEmotion = checkEmotion
-module.exports.speak = speak
+module.exports = {
+  checkEmotion,
+  speak,
+}
