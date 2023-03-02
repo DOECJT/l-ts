@@ -1,19 +1,19 @@
 // Write your types here! ✨
 
-declare global {
-  interface Window {
-    passports: Passports
-  }
-}
+// declare global {
+//   interface Window {
+//     passports: Passports
+//   }
+// }
 
-interface Passports {
-  [i: string]: Passport | undefined
-}
+// interface Passports {
+//   [i: string]: Passport | undefined
+// }
 
-interface Passport {
-  expires: Date
-  name: string
-}
+// interface Passport {
+//   expires: Date
+//   name: string
+// }
 
 export function checkPassport(id: string) {
   const passport = window.passports[id]
