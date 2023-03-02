@@ -31,7 +31,7 @@ async function showVolunteerIllusion(
   illusion: VolunteerIllusion,
 ) {
   console.log(
-		`Let's give a big round of applause for ${audienceMember.name}! 👏`,
+    `Let's give a big round of applause for ${audienceMember.name}! 👏`,
   )
 
   console.log('...drumroll please... 🥁')
